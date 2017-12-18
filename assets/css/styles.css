@@ -1,0 +1,110 @@
+body {
+    background-color: olive;
+}
+
+#container {
+    width: 800px;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 40px;
+    overflow: visible;
+    background-color: silver;
+}
+
+.gap {
+    width: 100%;
+    position: relative;
+    height: 200px;
+}
+
+.page {
+    width: 100%;
+    position: relative;
+}
+
+#page1 {
+    height: 1100px;
+}
+
+#treesbw {
+    height: 1200px;
+}
+
+#trees {
+    height: 1200px;
+}
+
+#hands {
+    height: 1200px;
+}
+
+#rings {
+    height: 1200px;
+}
+
+#matt {
+    height: 700px;
+}
+
+#headerphoto {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#secondphoto {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50%;
+}
+
+.treesphoto {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#firstringphoto {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30%;
+}
+
+#secondringphoto {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 360px;
+}
+
+#carolynringphoto {
+    position: absolute;
+    top: 380px;
+    left: 0px;
+    width: 50%;
+}
+
+#mattphoto {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+}
+
+#bwhugphoto {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40%;
+}
+#handsphoto {
+    position: absolute;
+    top: 430px;
+    left: 0px;
+    width: 40%;
+}
+
