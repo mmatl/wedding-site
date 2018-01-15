@@ -30,6 +30,17 @@ a:hover {
 }
 
 
+.arrowup {
+    position: absolute;
+    width: 120px;
+}
+
+.arrowdown {
+    position: absolute;
+    width: 120px;
+    transform: rotate(180deg);
+}
+
 .page {
     width: 100%;
     position: relative;
@@ -83,6 +94,20 @@ a:hover {
     width: 70%;
 }
 
+#headerinfo {
+    position: absolute;
+    top: 85%;
+    right: 0%;
+    width: 40%;
+    font-style: italic;
+}
+
+.hispan {
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
 .toptab {
     font-size: 1.0em;
     display: inline-block;
@@ -95,6 +120,11 @@ a:hover {
 #story {
     padding-top: 135%;
     box-sizing: border-box;
+}
+
+#storyup {
+    left: -7%;
+    top: 35%;
 }
 
 #storyheader {
@@ -346,16 +376,33 @@ hr {
 
 #vertbar {
     height: 140%;
-    width: 80px;
+    width: 12%;
     z-index: 0;
     left: 75%;
     top: 25%;
-    background-image: url("../illustrations/vertbar.png");
 }
 
 #bridalparty {
     padding-top: 100%;
     box-sizing: border-box;
+}
+
+#bridesheader {
+    top: 17%;
+    right: 5.5%;
+    font-size: 2.2em;
+}
+
+#bridesbody {
+    position: absolute;
+    font-size: 1.5em;
+    top: 25%;
+    right: 5.5%;
+    width: 24%;
+    height: 55%;
+    overflow-y: auto;
+    z-index: 4;
+    text-align: right;
 }
 
 #carolyn {
@@ -365,7 +412,7 @@ hr {
 }
 
 #pine1 {
-    left: 60%;
+    left: 55%;
     top: 2%;
     width: 20%;
     z-index: 3;
@@ -390,6 +437,24 @@ hr {
     padding-top: 140%;
     box-sizing: border-box;
     margin-bottom: 20%;
+}
+
+#groomsheader {
+    top: 83.5%;
+    left: 22%;
+    font-size: 2.2em;
+}
+
+#groomsbody {
+    position: absolute;
+    font-size: 1.5em;
+    top: 87%;
+    left: 26%;
+    width: 65%;
+    height: 15%;
+    overflow-y: auto;
+    z-index: 4;
+    text-align: left;
 }
 
 #star {
@@ -466,6 +531,23 @@ hr {
     padding-top: 140%;
     box-sizing: border-box;
     margin-bottom: 20%;
+}
+
+#registryheader {
+    top: 53%;
+    right: 13%;
+    font-size: 2.5em;
+}
+
+#registrybody {
+    position: absolute;
+    font-size: 1.5em;
+    top: 58%;
+    right: 5%;
+    width: 23.5%;
+    height: 35%;
+    overflow-y: auto;
+    z-index: 4;
 }
 
 #flower1 {
@@ -577,16 +659,16 @@ hr {
 }
 
 #thanksheader {
-    top: 80%;
-    left: 20%;
-    font-size: 2.5vw;
+    top: 81%;
+    left: 23%;
+    font-size: 2.5em;
 }
 
 #thanksbody {
     position: absolute;
-    font-size: 1.0vw;
-    top: 85%;
-    left: 30%;
+    font-size: 1.5em;
+    top: 86%;
+    left: 32%;
     width: 57%;
     height: 15%;
     overflow-y: auto;
@@ -647,6 +729,47 @@ hr {
         font-size: 2.0vw;
     }
 
+    .hispan {
+        font-size: 1.8vw;
+    }
+
+    #headerinfo {
+        top: 83%;
+    }
+
+    #thanksheader {
+        font-size: 4.0vw;
+    }
+
+    #thanksbody {
+        font-size: 2.5vw;
+    }
+
+    #registryheader {
+        font-size: 3.8vw;
+        right: 11.5%;
+    }
+
+    #registrybody {
+        font-size: 2.5vw;
+    }
+
+    #bridesheader {
+        font-size: 3.8vw;
+    }
+
+    #bridesbody {
+        font-size: 2.5vw;
+    }
+
+    #groomsheader {
+        font-size: 3.8vw;
+        right: 11.5%;
+    }
+
+    #groomsbody {
+        font-size: 2.5vw;
+    }
 }
 
 @media only screen and (max-width: 600px) {

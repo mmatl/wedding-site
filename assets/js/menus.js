@@ -67,28 +67,37 @@ $(document).ready(function() {
         $("#lodgingbutton").css("text-shadow", "1px 1px 1px");
     });
 
-    $("#storybutton").click(function() {
-        $("html, body").animate({
-            scrollTop: $("#story").offset().top }, 2000);
-    });
-    $("#vtbutton").click(function() {
-        $("html, body").animate({
-            scrollTop: $("#details").offset().top }, 2000);
-    });
-    $("#todobutton").click(function() {
-        $("html, body").animate({
-            scrollTop: $("#thingstodo").offset().top }, 2000);
-    });
-    $("#teambutton").click(function() {
-        $("html, body").animate({
-            scrollTop: $("#bridalparty").offset().top }, 2000);
-    });
-    $("#qabutton").click(function() {
-        $("html, body").animate({
-            scrollTop: $("#qanda").offset().top }, 2000);
-    });
-    $("#thxbutton").click(function() {
-        $("html, body").animate({
-            scrollTop: $("#thanks").offset().top }, 2000);
-    });
+    var scrollToCenter = function(elem) {
+        return function() {
+            var el = $(elem)
+            var eloffset = el.offset().top;
+            var height = el.height();
+            var windowheight = $(window).height();
+            var offset;
+
+            if (height < $(window).height()) {
+                offset = eloffset - ((windowheight / 2) - (height / 2));
+            } else {
+                offset = eloffset;
+            }
+            $("html, body").animate({
+                scrollTop: offset
+            }, 2500)
+        };
+    };
+
+    var scrollToTop = function(elem) {
+        return function() {
+            $("html, body").animate({
+                scrollTop: $(elem).offset().top }, 2500);
+        };
+    };
+
+
+    $("#storybutton").click(scrollToTop("#story"));
+    $("#vtbutton").click(scrollToTop("#details"));
+    $("#todobutton").click(scrollToCenter("#horizpanel1"));
+    $("#teambutton").click(scrollToCenter("#carolyn"));
+    $("#qabutton").click(scrollToCenter("#handhug"));
+    $("#thxbutton").click(scrollToCenter("#thanksbody"));
 });
