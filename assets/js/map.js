@@ -31,7 +31,7 @@ function initialize() {
         [
             '<div class="info_content">' +
             '<h3>Old Field Club</h3>' +
-            '<p>The Old Field Club is our reception venue. It\'s a lovely building with rustic vibe right on the Long Island Sound.</p>' +
+            '<p>The Old Field Club is our reception venue. It\'s a lovely building with a rustic vibe right on the Long Island Sound.</p>' +
             '</div>'
         ],
         [
@@ -49,7 +49,7 @@ function initialize() {
         [
             '<div class="info_content">' +
             '<h3>Holiday Inn</h3>' +
-            '<p>A standard Holiday Inn on the highway near Stony Brook.</p>' +
+            '<p>A Holiday Inn on the highway near Stony Brook.</p>' +
             '</div>'
         ],
         [
@@ -61,7 +61,7 @@ function initialize() {
         [
             '<div class="info_content">' +
             '<h3>Three Village Inn</h3>' +
-            '<p>An upscale hotel near the West Meadow Wetlands Reserve.</p>' +
+            '<p>A cute hotel near Avalon Park.</p>' +
             '</div>'
         ],
     ];

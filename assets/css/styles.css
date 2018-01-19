@@ -315,6 +315,10 @@ hr {
     margin-bottom: 1.0em;
 }
 
+#sbbutton {
+    margin-bottom: 1.0em;
+}
+
 #libutton {
     margin-bottom: 1.0em;
 }
@@ -535,7 +539,7 @@ hr {
 
 #registryheader {
     top: 53%;
-    right: 13%;
+    right: 12%;
     font-size: 2.5em;
 }
 
@@ -543,8 +547,8 @@ hr {
     position: absolute;
     font-size: 1.5em;
     top: 58%;
-    right: 5%;
-    width: 23.5%;
+    right: 4%;
+    width: 22.5%;
     height: 35%;
     overflow-y: auto;
     z-index: 4;
@@ -667,10 +671,10 @@ hr {
 #thanksbody {
     position: absolute;
     font-size: 1.5em;
-    top: 86%;
+    top: 92%;
     left: 32%;
     width: 57%;
-    height: 15%;
+    height: 10%;
     overflow-y: auto;
     z-index: 4;
 }

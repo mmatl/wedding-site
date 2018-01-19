@@ -3,37 +3,56 @@ $(document).ready(function() {
     $("#lodgingdetailstext").hide();
     $("#venuebutton").css("text-shadow", "1px 1px 1px");
 
-    $("#litodo").hide();
-    $("#pjtodo").hide();
     $("#nybutton").css("text-shadow", "1px 1px 1px");
+    $("#litodo").hide();
+    $("#sbtodo").hide();
+    $("#pjtodo").hide();
 
     $("#nybutton").click(function() {
         $("#nytodo").show();
         $("#litodo").hide();
+        $("#sbtodo").hide();
         $("#pjtodo").hide();
 
         $("#nybutton").css("text-shadow", "1px 1px 1px");
         $("#libutton").css("text-shadow", "");
+        $("#sbbutton").css("text-shadow", "");
         $("#pjbutton").css("text-shadow", "");
     });
 
     $("#libutton").click(function() {
         $("#nytodo").hide();
         $("#litodo").show();
+        $("#sbtodo").hide();
         $("#pjtodo").hide();
 
         $("#nybutton").css("text-shadow", "");
         $("#libutton").css("text-shadow", "1px 1px 1px");
+        $("#sbbutton").css("text-shadow", "");
+        $("#pjbutton").css("text-shadow", "");
+    });
+
+    $("#sbbutton").click(function() {
+        $("#nytodo").hide();
+        $("#litodo").hide();
+        $("#sbtodo").show();
+        $("#pjtodo").hide();
+
+        $("#nybutton").css("text-shadow", "");
+        $("#libutton").css("text-shadow", "");
+        $("#sbbutton").css("text-shadow", "1px 1px 1px");
         $("#pjbutton").css("text-shadow", "");
     });
 
     $("#pjbutton").click(function() {
         $("#nytodo").hide();
         $("#litodo").hide();
+        $("#sbtodo").hide();
         $("#pjtodo").show();
 
         $("#nybutton").css("text-shadow", "");
         $("#libutton").css("text-shadow", "");
+        $("#sbbutton").css("text-shadow", "");
         $("#pjbutton").css("text-shadow", "1px 1px 1px");
     });
 
